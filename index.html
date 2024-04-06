@@ -9,11 +9,11 @@
   <body>
     <div class="image">
       <div class="logo">
-        <img src="" alt="" class="thumbnail" />
-        <div class="brand"></div>
+        <img src="steak.png" alt="steak photo" class="thumbnail" />
+        <div class="brand">ALOE</div>
       </div>
       <div class="caption">
-        Photo by <span id="author">Patric West</span> on
+        Photo by <span id="author">Jose Figueroa</span> on
         <span id="website">Unsplash</span>
       </div>
     </div>
@@ -28,24 +28,55 @@
         <div class="prompt">Let's do this!</div>
         <form action="" method="post" class="account-form">
           <fieldset>
-            <label for="name">FIRST NAME</label>
-            <input type="text" id="name" />
-            <label for="surname">LAST NAME</label>
-            <input type="text" id="surname" />
-            <label for="mail">EMAIL</label>
-            <input type="mail" id="mail" />
-            <label for="phone">PHONE NUMBER</label>
-            <input type="tel" id="phone" />
-            <label for="pass1">PASSWORD</label>
-            <input type="password" />
-            <label for="pass2">CONFIRM PASSWORD</label>
-            <input type="password" id="pass2" />
+            <div class="firstcol">
+              <label for="name">FIRST NAME</label>
+              <input
+                type="text"
+                id="name"
+                name="firstName"
+                placeholder="John"
+                required
+              />
+              <label for="mail">EMAIL</label>
+              <input
+                type="mail"
+                id="mail"
+                name="eMail"
+                placeholder="John.Smith@gmail.com"
+                required
+              />
+              <label for="pass1">PASSWORD</label>
+              <input type="password" id="pass1" name="pass1" required />
+            </div>
+            <div class="secondcol">
+              <label for="surname">LAST NAME</label>
+              <input
+                type="text"
+                id="surname"
+                name="lastName"
+                placeholder="Smith"
+                required
+              />
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phoneNumber"
+                placeholder="+28 084-204-400"
+                required
+              />
+              <label for="pass2">CONFIRM PASSWORD</label>
+              <input type="password" id="pass2" name="pass2" required />
+            </div>
           </fieldset>
         </form>
       </div>
       <div class="footer">
         <button class="create">Create Account</button>
-        <div class="log-in">Already have an account? Log in</div>
+        <div class="log-in">
+          Already have an account?
+          <a href="https://github.com/imaciej10/odin-sketch">Log in</a>
+        </div>
       </div>
     </div>
   </body>
