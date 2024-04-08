@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="image">
       <div class="logo">
-        <img src="steak.png" alt="steak photo" class="thumbnail" />
+        <img src="logo.png" alt="logo" class="thumbnail" />
         <div class="brand">ALOE</div>
       </div>
       <div class="caption">
@@ -46,7 +47,15 @@
                 required
               />
               <label for="pass1">PASSWORD</label>
-              <input type="password" id="pass1" name="pass1" required />
+              <input
+                type="password"
+                id="pass1"
+                name="pass1"
+                minlength="8"
+                required
+                class="firstPass"
+              />
+              <span class="check">Passwords do not match!</span>
             </div>
             <div class="secondcol">
               <label for="surname">LAST NAME</label>
@@ -66,7 +75,14 @@
                 required
               />
               <label for="pass2">CONFIRM PASSWORD</label>
-              <input type="password" id="pass2" name="pass2" required />
+              <input
+                type="password"
+                id="pass2"
+                name="pass2"
+                minlength="8"
+                class="secondPass"
+                required
+              />
             </div>
           </fieldset>
         </form>
